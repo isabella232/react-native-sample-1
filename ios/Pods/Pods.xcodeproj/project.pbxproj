@@ -1,0 +1,1096 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		021B8720535DE1904D7426E287CD10DE /* RegisterDeviceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EDA4D9B29294FF628DF0014260C6CC /* RegisterDeviceOperation.swift */; };
+		063028F41D98B3C3B414E890E04E187D /* TrackedEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507F885B8D7E870CB83449E01BD8B86 /* TrackedEventType.swift */; };
+		09B8018A9FBB191D6A34B9795388683C /* HTTPResourceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC70FAF34E60F6F0332CFE0573C4D402 /* HTTPResourceClient.swift */; };
+		171A26BF80A83A82BE3FFB6D8CB3936B /* VibesLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37285A301BC688B5D09D1E1355F7BDE5 /* VibesLogger.swift */; };
+		1C28A7DA47955AF3C7E012C2BEDF5556 /* APIDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0531DECE3B8DCFD1C9834CDFE411E76 /* APIDefinition.swift */; };
+		291C9E4094D90A7740D34DF2B874D11C /* ResourceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE125610CB7E64A7F0DF1555CE28370 /* ResourceResult.swift */; };
+		2C129F2AB1552AD39A3797E1B19B8B95 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6E06BD66411EB8E62622B081BE4AC /* HTTPMethod.swift */; };
+		2DDE73B76DE734EED4B88E860A418FB1 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEE6CFA39A867280277F53A76F2F38 /* DeviceType.swift */; };
+		2EE45904F853902A9D6C835A660A16A5 /* Vibes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C866D39395B906EF9F553DE7DC48620 /* Vibes.swift */; };
+		3162D68E2D2B9721EE613331FA65B7E2 /* VibesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A24ED24385D5AE06109FE148BBEC3D5 /* VibesAPI.swift */; };
+		33EC15D2B7A9461B7DD165B34E45AD66 /* VibesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE657CF2755347CEA10E80EBE656DFF4 /* VibesConfiguration.swift */; };
+		39DB1816DC80E6310F617BA4ECC172C9 /* HTTPResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9726C8E5E815142F7BBD950263CECF62 /* HTTPResource.swift */; };
+		3D10AC8FF9013E6B995CFC3E6ED3F03C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA81AC54D36E742567C1A784B671AE1 /* Event.swift */; };
+		427D651B1D0F61DEF5789944D9CEA436 /* PersistentEventStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F92BF2FAAECCDC6ECC2DAFFE15038 /* PersistentEventStorage.swift */; };
+		4502473C823401664A956ABF60668119 /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0971744AAD60C3E005EE50EB3D43626 /* BaseOperation.swift */; };
+		4F2886965B6974813F13CD61D9297931 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164ACC5BF24C9B64FB1C94BBD18FE9 /* Credential.swift */; };
+		500A17551760B1C43DA2E7EB82BF1E7C /* VibesURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83111DE0317D22412090DA0F35E79FA5 /* VibesURLProtocol.swift */; };
+		51304B98D1A2A743D61EF0FD8E686A1E /* HTTPURLResponse+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56BADAE5756F1843D3DFBCA961AB1FA /* HTTPURLResponse+cURL.swift */; };
+		5480F46117CF22253D2CBCD714967615 /* AuthTokenBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD42C9A666F6B8CF0BA872C21DC500 /* AuthTokenBehavior.swift */; };
+		632C5F8B8A8905AFE48847AAEDD74907 /* URLRequest+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406BEA492F1D495EDDBD5C269645F2FC /* URLRequest+cURL.swift */; };
+		6756D288A1757CFF5B5EDD3D64793A54 /* VibesPush-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 450675514757D67ED4827A0FDEF81CC6 /* VibesPush-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6919B059641EB62D89AC148AADA9D033 /* CredentialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19705D790E8BA09A76CCE3793962E63E /* CredentialManager.swift */; };
+		6A83D90AA63AEABD5B489E45EDE2E3C8 /* VibesAPIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09843DBCEBA187B54258D381107623C9 /* VibesAPIDelegate.swift */; };
+		6AB699C3A49AD03C3FAF81CC8F4334D8 /* LocalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B026FB41C875FF350E2CDA4BB755F /* LocalValue.swift */; };
+		6C296CFA5A26DC75F2CF4AB3642DD315 /* Pods-sampleReactNative-tvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86ED1C8438D99CE9C298681D8AB11882 /* Pods-sampleReactNative-tvOSTests-dummy.m */; };
+		6E81FCE6BC8E8E53EF2D07C643BFB85B /* LocalStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2A29FDBE98B79908A9A10F3BB3D973 /* LocalStorageKeys.swift */; };
+		7223EE948AEE79AC464F162D59784C08 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34298C47C706C8562F7EE5AE7160F3D1 /* UserDefaultsStorage.swift */; };
+		722CEC82B3D084278C169641FB426F53 /* Dictionary+merged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69A76E0787CD6D38281987B3897034 /* Dictionary+merged.swift */; };
+		73895BD484B372FB16D7B9525AB7AC18 /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8687EED1E419667FDC6FEA8CD3FA4 /* ConsoleLogger.swift */; };
+		738A241CDA035BFA73D9C6EBCB11BC56 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD344FA70B222C4D2635D90BDDABA6 /* KeychainStorage.swift */; };
+		790F9038D95FF7B163230DC6EEA756C5 /* Date+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA179B211DFF5C1ED3C7CD271953A36D /* Date+iso8601.swift */; };
+		7A1C2BA725929DBDD7F4D3A9D90ACC92 /* LocalStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697DB8D79FBC2A686884CD12E9252DB /* LocalStorageType.swift */; };
+		7AF88C2A6B95D9AEEA919A0D40B58801 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B8CD2E6EF28159444D97A271F81B2 /* JSONParser.swift */; };
+		81FB3CC63E28E980944F42F566C0729F /* InputStream+readToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C324D4D715C9E082A407D02229AFF /* InputStream+readToString.swift */; };
+		8B866EF98203D87D1A1C6551B79033C5 /* DeviceToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCE91CC220CDE7887715BF2C159F440 /* DeviceToken.swift */; };
+		9BC13B54D4A6123DC96AF86FF317A4B5 /* Pods-sampleReactNative-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51939B3D3BC1E1F92637CC2007FAD588 /* Pods-sampleReactNative-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9EF2E02B0DD803C40BCCE1DEE7E5CE75 /* Pods-sampleReactNativeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0BD07BE987522D2FE145D0F2604D8 /* Pods-sampleReactNativeTests-dummy.m */; };
+		A2455147EDF158133DFF8FFADE6DD598 /* RegisterPushOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2344D7B87570187D534A24CE05674548 /* RegisterPushOperation.swift */; };
+		A9EC0A363109B0BE284702D37078CC56 /* UnregisterDeviceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF610982117F348CF9B56E62A6DF959 /* UnregisterDeviceOperation.swift */; };
+		ADF207B2C741C68F66D58E9628E9A305 /* AssociatePersonOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACDA41DB8586AFFBE540363A9A07D6D /* AssociatePersonOperation.swift */; };
+		AE36A8A7CFE3FFDF6F22D14DF3F9BEB5 /* VibesPush-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB1DC740B3AC06D15041C9821EB655C /* VibesPush-dummy.m */; };
+		BBEB920C0FBEC99599816AE0FCF35610 /* Pods-sampleReactNative-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FB8657CC9EFAC55FC4748B55920BBE /* Pods-sampleReactNative-dummy.m */; };
+		BC3CCCE2D3E729C674630E16E5662C31 /* LocalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EB80179C9C86C492D15A556E7AA52E /* LocalObject.swift */; };
+		BDF689A2D62F56115119135F9BF0D5F4 /* EventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282E4AE5E2161E3A109FAFA81A94531 /* EventCollection.swift */; };
+		C5B8D8DE30147DBE7A0AEA050B622843 /* UnregisterPushOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0589C7C41A053F9C7AEAAC2EC32C6E /* UnregisterPushOperation.swift */; };
+		C8D94F7500AA9A28756A82CFC79AD1D9 /* EventOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A69D87D4B0A8CCB4ECB6235C1503F53 /* EventOperation.swift */; };
+		D12153DDDFC0D60EC23072AB64FE4BB2 /* Pods-sampleReactNative-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E26D08D1E5F89C2B799CEDCB80F96096 /* Pods-sampleReactNative-tvOS-dummy.m */; };
+		D2478EDD1BD01B24F3F4B52BD905C53C /* EventTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ECEC95957561919D707B70E0763166 /* EventTracker.swift */; };
+		DAA63034A0CB1BD7A534F431823AE8D6 /* AppObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B06FC240B2CC6717DFA97DBF50726C /* AppObserver.swift */; };
+		DE5235BB092B30BBF09AE74C95476648 /* HTTPBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E1E216D49CC7F4DDA863F3C5BCEAC /* HTTPBehavior.swift */; };
+		E5A72346A2A4EB208C36E0C6AE203E29 /* UpdateDeviceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D085BE0F07A8AF0DCA5A5BAA373C5BE /* UpdateDeviceOperation.swift */; };
+		E6AFBAC4E6D31FC33D20BEE3EDE366BA /* VibesQueueOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA35075DF09DDA45CF787DDB0A320026 /* VibesQueueOperation.swift */; };
+		E73E940592ED01E42DA99FA636C1A289 /* VibesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27B6543A19598FDE7C7BBC0EFE68DA7 /* VibesResult.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34658D4F3217DA1DF5EF86F67879088A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C4A4241515DD3FB8C5A7E03898304FD;
+			remoteInfo = VibesPush;
+		};
+		51B4CA20F80780F9C6DFFE6DDD752ABD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5582BDF9874B0AA2A52E9E3FC06B448;
+			remoteInfo = "Pods-sampleReactNative-tvOS";
+		};
+		D84E6A860DF00B3C16C5A9A2540F0345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62BE7C4504127242E9182C6BFAC29DEA;
+			remoteInfo = "Pods-sampleReactNative";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09843DBCEBA187B54258D381107623C9 /* VibesAPIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VibesAPIDelegate.swift; path = Sources/VibesAPIDelegate.swift; sourceTree = "<group>"; };
+		0A24ED24385D5AE06109FE148BBEC3D5 /* VibesAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VibesAPI.swift; path = Sources/VibesAPI.swift; sourceTree = "<group>"; };
+		0E7E1E216D49CC7F4DDA863F3C5BCEAC /* HTTPBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPBehavior.swift; path = Sources/HTTP/HTTPBehavior.swift; sourceTree = "<group>"; };
+		0F0589C7C41A053F9C7AEAAC2EC32C6E /* UnregisterPushOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnregisterPushOperation.swift; path = Sources/HTTP/Operations/UnregisterPushOperation.swift; sourceTree = "<group>"; };
+		19705D790E8BA09A76CCE3793962E63E /* CredentialManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialManager.swift; path = Sources/CredentialManager.swift; sourceTree = "<group>"; };
+		1C589242DED5043AA13A22C4024D94A7 /* VibesPush.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VibesPush.xcconfig; sourceTree = "<group>"; };
+		2344D7B87570187D534A24CE05674548 /* RegisterPushOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegisterPushOperation.swift; path = Sources/HTTP/Operations/RegisterPushOperation.swift; sourceTree = "<group>"; };
+		241C40F9C9278F679227F7CEA2E49BF7 /* Pods-sampleReactNative-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sampleReactNative-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		34298C47C706C8562F7EE5AE7160F3D1 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDefaultsStorage.swift; path = Sources/UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		37285A301BC688B5D09D1E1355F7BDE5 /* VibesLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VibesLogger.swift; path = Sources/VibesLogger.swift; sourceTree = "<group>"; };
+		3A4EE2081AEB8EA7A5ED228B10122007 /* Pods-sampleReactNative-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sampleReactNative-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		3CA6E06BD66411EB8E62622B081BE4AC /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/HTTP/HTTPMethod.swift; sourceTree = "<group>"; };
+		406BEA492F1D495EDDBD5C269645F2FC /* URLRequest+cURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+cURL.swift"; path = "Sources/URLRequest+cURL.swift"; sourceTree = "<group>"; };
+		40EB80179C9C86C492D15A556E7AA52E /* LocalObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalObject.swift; path = Sources/LocalObject.swift; sourceTree = "<group>"; };
+		450675514757D67ED4827A0FDEF81CC6 /* VibesPush-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VibesPush-umbrella.h"; sourceTree = "<group>"; };
+		4507F885B8D7E870CB83449E01BD8B86 /* TrackedEventType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackedEventType.swift; path = Sources/TrackedEventType.swift; sourceTree = "<group>"; };
+		46FB8657CC9EFAC55FC4748B55920BBE /* Pods-sampleReactNative-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sampleReactNative-dummy.m"; sourceTree = "<group>"; };
+		4BFECB195A7AB74F92701137BA3DAA57 /* Pods-sampleReactNative-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-sampleReactNative-acknowledgements.markdown"; sourceTree = "<group>"; };
+		51939B3D3BC1E1F92637CC2007FAD588 /* Pods-sampleReactNative-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-sampleReactNative-umbrella.h"; sourceTree = "<group>"; };
+		5282E4AE5E2161E3A109FAFA81A94531 /* EventCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventCollection.swift; path = Sources/EventCollection.swift; sourceTree = "<group>"; };
+		54E33C9BCA2EBCF3FEDA9A0E3A419810 /* Pods-sampleReactNative-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sampleReactNative-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		559FC1CA6634F072274EAAE2F3A1279C /* Pods-sampleReactNativeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sampleReactNativeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		58F69152BDDEC90011DB2FBAE610789D /* Pods-sampleReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sampleReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		5BA81AC54D36E742567C1A784B671AE1 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Sources/Event.swift; sourceTree = "<group>"; };
+		60ECEC95957561919D707B70E0763166 /* EventTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventTracker.swift; path = Sources/EventTracker.swift; sourceTree = "<group>"; };
+		63EDA4D9B29294FF628DF0014260C6CC /* RegisterDeviceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegisterDeviceOperation.swift; path = Sources/HTTP/Operations/RegisterDeviceOperation.swift; sourceTree = "<group>"; };
+		6A69D87D4B0A8CCB4ECB6235C1503F53 /* EventOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventOperation.swift; path = Sources/HTTP/Operations/EventOperation.swift; sourceTree = "<group>"; };
+		70E1AF4CFC646CD57B0D5EC78266BFCA /* Pods-sampleReactNative-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-sampleReactNative-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		72851710BC5044CF83D65C6DA3D3A9C3 /* libPods-sampleReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-sampleReactNative.a"; path = "libPods-sampleReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83111DE0317D22412090DA0F35E79FA5 /* VibesURLProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VibesURLProtocol.swift; path = Sources/VibesURLProtocol.swift; sourceTree = "<group>"; };
+		843179F3C92CE6B44A49A5CA1A482433 /* VibesPush.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VibesPush.modulemap; sourceTree = "<group>"; };
+		86ED1C8438D99CE9C298681D8AB11882 /* Pods-sampleReactNative-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sampleReactNative-tvOSTests-dummy.m"; sourceTree = "<group>"; };
+		8AFD23273A5A9F2B6A01257E7DCCF26F /* libPods-sampleReactNative-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-sampleReactNative-tvOSTests.a"; path = "libPods-sampleReactNative-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1FA870F3A3BECA4B4309A10262A745 /* Pods-sampleReactNative.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-sampleReactNative.modulemap"; sourceTree = "<group>"; };
+		8F51AE3D6C627E324F3AA2C8FE8C0B88 /* Pods-sampleReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sampleReactNative.release.xcconfig"; sourceTree = "<group>"; };
+		8F69A76E0787CD6D38281987B3897034 /* Dictionary+merged.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+merged.swift"; path = "Sources/Dictionary+merged.swift"; sourceTree = "<group>"; };
+		912C324D4D715C9E082A407D02229AFF /* InputStream+readToString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "InputStream+readToString.swift"; path = "Sources/InputStream+readToString.swift"; sourceTree = "<group>"; };
+		96FD344FA70B222C4D2635D90BDDABA6 /* KeychainStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainStorage.swift; path = Sources/KeychainStorage.swift; sourceTree = "<group>"; };
+		9726C8E5E815142F7BBD950263CECF62 /* HTTPResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPResource.swift; path = Sources/HTTP/HTTPResource.swift; sourceTree = "<group>"; };
+		9C866D39395B906EF9F553DE7DC48620 /* Vibes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vibes.swift; path = Sources/Vibes.swift; sourceTree = "<group>"; };
+		9D085BE0F07A8AF0DCA5A5BAA373C5BE /* UpdateDeviceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateDeviceOperation.swift; path = Sources/HTTP/Operations/UpdateDeviceOperation.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A27B6543A19598FDE7C7BBC0EFE68DA7 /* VibesResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VibesResult.swift; path = Sources/VibesResult.swift; sourceTree = "<group>"; };
+		A2DEE6CFA39A867280277F53A76F2F38 /* DeviceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceType.swift; path = Sources/DeviceType.swift; sourceTree = "<group>"; };
+		AA2A29FDBE98B79908A9A10F3BB3D973 /* LocalStorageKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalStorageKeys.swift; path = Sources/LocalStorageKeys.swift; sourceTree = "<group>"; };
+		AE98B8CD1ABCC421278F5B7E8C457CD5 /* Pods-sampleReactNative-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sampleReactNative-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		B0971744AAD60C3E005EE50EB3D43626 /* BaseOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseOperation.swift; path = Sources/HTTP/Operations/BaseOperation.swift; sourceTree = "<group>"; };
+		B697DB8D79FBC2A686884CD12E9252DB /* LocalStorageType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalStorageType.swift; path = Sources/LocalStorageType.swift; sourceTree = "<group>"; };
+		BAB1DC740B3AC06D15041C9821EB655C /* VibesPush-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VibesPush-dummy.m"; sourceTree = "<group>"; };
+		BB3B026FB41C875FF350E2CDA4BB755F /* LocalValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalValue.swift; path = Sources/LocalValue.swift; sourceTree = "<group>"; };
+		BC24B699EFCE5EF65E065F60BC1E0CDA /* Pods-sampleReactNative-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-sampleReactNative-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE164ACC5BF24C9B64FB1C94BBD18FE9 /* Credential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Credential.swift; path = Sources/Credential.swift; sourceTree = "<group>"; };
+		BE657CF2755347CEA10E80EBE656DFF4 /* VibesConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VibesConfiguration.swift; path = Sources/VibesConfiguration.swift; sourceTree = "<group>"; };
+		C87845C699B6EF199574F0668969D9BF /* Pods-sampleReactNativeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-sampleReactNativeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC70FAF34E60F6F0332CFE0573C4D402 /* HTTPResourceClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPResourceClient.swift; path = Sources/HTTP/HTTPResourceClient.swift; sourceTree = "<group>"; };
+		CD7B8CD2E6EF28159444D97A271F81B2 /* JSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONParser.swift; path = Sources/HTTP/JSONParser.swift; sourceTree = "<group>"; };
+		CDEA3227255E5BCBF90312F86A9B718C /* libPods-sampleReactNative-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-sampleReactNative-tvOS.a"; path = "libPods-sampleReactNative-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20F92BF2FAAECCDC6ECC2DAFFE15038 /* PersistentEventStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistentEventStorage.swift; path = Sources/PersistentEventStorage.swift; sourceTree = "<group>"; };
+		D2F8D4AF17AB8A2B27D692ABED1FFAD1 /* libPods-sampleReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-sampleReactNativeTests.a"; path = "libPods-sampleReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9BFA9E56B7434B06B889A4780ADBAD2 /* VibesPush-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VibesPush-prefix.pch"; sourceTree = "<group>"; };
+		DACDA41DB8586AFFBE540363A9A07D6D /* AssociatePersonOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociatePersonOperation.swift; path = Sources/HTTP/Operations/AssociatePersonOperation.swift; sourceTree = "<group>"; };
+		DBBD42C9A666F6B8CF0BA872C21DC500 /* AuthTokenBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthTokenBehavior.swift; path = Sources/AuthTokenBehavior.swift; sourceTree = "<group>"; };
+		DBCE91CC220CDE7887715BF2C159F440 /* DeviceToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceToken.swift; path = Sources/DeviceToken.swift; sourceTree = "<group>"; };
+		DDD0BD07BE987522D2FE145D0F2604D8 /* Pods-sampleReactNativeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sampleReactNativeTests-dummy.m"; sourceTree = "<group>"; };
+		DEB8B691C2899635597A2170BCCDE249 /* Pods-sampleReactNative-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sampleReactNative-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0531DECE3B8DCFD1C9834CDFE411E76 /* APIDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIDefinition.swift; path = Sources/APIDefinition.swift; sourceTree = "<group>"; };
+		E26D08D1E5F89C2B799CEDCB80F96096 /* Pods-sampleReactNative-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sampleReactNative-tvOS-dummy.m"; sourceTree = "<group>"; };
+		E43C567F74009D9BBA52DF4DBC4CEB96 /* Pods-sampleReactNative-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sampleReactNative-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4C6D36A62C5451E360F19B9E31A7036 /* Pods-sampleReactNative-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sampleReactNative-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E56BADAE5756F1843D3DFBCA961AB1FA /* HTTPURLResponse+cURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HTTPURLResponse+cURL.swift"; path = "Sources/HTTPURLResponse+cURL.swift"; sourceTree = "<group>"; };
+		E7B06FC240B2CC6717DFA97DBF50726C /* AppObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppObserver.swift; path = Sources/AppObserver.swift; sourceTree = "<group>"; };
+		EA179B211DFF5C1ED3C7CD271953A36D /* Date+iso8601.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+iso8601.swift"; path = "Sources/Date+iso8601.swift"; sourceTree = "<group>"; };
+		EA35075DF09DDA45CF787DDB0A320026 /* VibesQueueOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VibesQueueOperation.swift; path = Sources/HTTP/Operations/VibesQueueOperation.swift; sourceTree = "<group>"; };
+		F17D0CAAD843DC9D579C6B141BECCF32 /* Pods-sampleReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sampleReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2E8687EED1E419667FDC6FEA8CD3FA4 /* ConsoleLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleLogger.swift; path = Sources/ConsoleLogger.swift; sourceTree = "<group>"; };
+		F60D51F7D1E235A271C36CD7EADD7B90 /* Pods-sampleReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sampleReactNative.debug.xcconfig"; sourceTree = "<group>"; };
+		FBF610982117F348CF9B56E62A6DF959 /* UnregisterDeviceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnregisterDeviceOperation.swift; path = Sources/HTTP/Operations/UnregisterDeviceOperation.swift; sourceTree = "<group>"; };
+		FDE125610CB7E64A7F0DF1555CE28370 /* ResourceResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceResult.swift; path = Sources/HTTP/ResourceResult.swift; sourceTree = "<group>"; };
+		FFCD9E0FD67F402521EACE93C1457A48 /* libVibesPush.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libVibesPush.a; path = libVibesPush.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		800E16B2B3E1CA558B078455A51E88E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB80BF4440F36D714507B8741F15669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A429BAE09963AB9C5448896C6CA4F862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D08011E9BCB77B61FA094B88CF8332AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3C8D63B9FFCF7D4B91F6EE35390577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195C9C013263CB518F166BFB503D7241 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C9B45D1E4E98C91053044A3ACED4C20 /* Pods-sampleReactNative */,
+				C5DE5DE938D8ACF072CBC74909D441AD /* Pods-sampleReactNative-tvOS */,
+				840D50C63A4DDD6465C7BB69A0320D32 /* Pods-sampleReactNative-tvOSTests */,
+				FAD2DEB3FD75D227107049ADDDB0F913 /* Pods-sampleReactNativeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3BD25433C08DF68B4DA65E1C37FAFDE5 /* VibesPush */ = {
+			isa = PBXGroup;
+			children = (
+				D70AE349ECF428659C76166C2EDAD4D2 /* Core */,
+				FE8B3C9F58778A258144F46EC981ECA2 /* Support Files */,
+			);
+			name = VibesPush;
+			path = VibesPush;
+			sourceTree = "<group>";
+		};
+		6C9B45D1E4E98C91053044A3ACED4C20 /* Pods-sampleReactNative */ = {
+			isa = PBXGroup;
+			children = (
+				8F1FA870F3A3BECA4B4309A10262A745 /* Pods-sampleReactNative.modulemap */,
+				4BFECB195A7AB74F92701137BA3DAA57 /* Pods-sampleReactNative-acknowledgements.markdown */,
+				E43C567F74009D9BBA52DF4DBC4CEB96 /* Pods-sampleReactNative-acknowledgements.plist */,
+				46FB8657CC9EFAC55FC4748B55920BBE /* Pods-sampleReactNative-dummy.m */,
+				51939B3D3BC1E1F92637CC2007FAD588 /* Pods-sampleReactNative-umbrella.h */,
+				F60D51F7D1E235A271C36CD7EADD7B90 /* Pods-sampleReactNative.debug.xcconfig */,
+				8F51AE3D6C627E324F3AA2C8FE8C0B88 /* Pods-sampleReactNative.release.xcconfig */,
+			);
+			name = "Pods-sampleReactNative";
+			path = "Target Support Files/Pods-sampleReactNative";
+			sourceTree = "<group>";
+		};
+		840D50C63A4DDD6465C7BB69A0320D32 /* Pods-sampleReactNative-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC24B699EFCE5EF65E065F60BC1E0CDA /* Pods-sampleReactNative-tvOSTests-acknowledgements.markdown */,
+				E4C6D36A62C5451E360F19B9E31A7036 /* Pods-sampleReactNative-tvOSTests-acknowledgements.plist */,
+				86ED1C8438D99CE9C298681D8AB11882 /* Pods-sampleReactNative-tvOSTests-dummy.m */,
+				DEB8B691C2899635597A2170BCCDE249 /* Pods-sampleReactNative-tvOSTests.debug.xcconfig */,
+				54E33C9BCA2EBCF3FEDA9A0E3A419810 /* Pods-sampleReactNative-tvOSTests.release.xcconfig */,
+			);
+			name = "Pods-sampleReactNative-tvOSTests";
+			path = "Target Support Files/Pods-sampleReactNative-tvOSTests";
+			sourceTree = "<group>";
+		};
+		A466F9B14B7527B0A4FAE97FEB7DE742 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BD25433C08DF68B4DA65E1C37FAFDE5 /* VibesPush */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B08230C9EEB4D1F873C19C066F043F86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72851710BC5044CF83D65C6DA3D3A9C3 /* libPods-sampleReactNative.a */,
+				CDEA3227255E5BCBF90312F86A9B718C /* libPods-sampleReactNative-tvOS.a */,
+				8AFD23273A5A9F2B6A01257E7DCCF26F /* libPods-sampleReactNative-tvOSTests.a */,
+				D2F8D4AF17AB8A2B27D692ABED1FFAD1 /* libPods-sampleReactNativeTests.a */,
+				FFCD9E0FD67F402521EACE93C1457A48 /* libVibesPush.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5DE5DE938D8ACF072CBC74909D441AD /* Pods-sampleReactNative-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				70E1AF4CFC646CD57B0D5EC78266BFCA /* Pods-sampleReactNative-tvOS-acknowledgements.markdown */,
+				AE98B8CD1ABCC421278F5B7E8C457CD5 /* Pods-sampleReactNative-tvOS-acknowledgements.plist */,
+				E26D08D1E5F89C2B799CEDCB80F96096 /* Pods-sampleReactNative-tvOS-dummy.m */,
+				241C40F9C9278F679227F7CEA2E49BF7 /* Pods-sampleReactNative-tvOS.debug.xcconfig */,
+				3A4EE2081AEB8EA7A5ED228B10122007 /* Pods-sampleReactNative-tvOS.release.xcconfig */,
+			);
+			name = "Pods-sampleReactNative-tvOS";
+			path = "Target Support Files/Pods-sampleReactNative-tvOS";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				A466F9B14B7527B0A4FAE97FEB7DE742 /* Pods */,
+				B08230C9EEB4D1F873C19C066F043F86 /* Products */,
+				195C9C013263CB518F166BFB503D7241 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D70AE349ECF428659C76166C2EDAD4D2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E0531DECE3B8DCFD1C9834CDFE411E76 /* APIDefinition.swift */,
+				E7B06FC240B2CC6717DFA97DBF50726C /* AppObserver.swift */,
+				DACDA41DB8586AFFBE540363A9A07D6D /* AssociatePersonOperation.swift */,
+				DBBD42C9A666F6B8CF0BA872C21DC500 /* AuthTokenBehavior.swift */,
+				B0971744AAD60C3E005EE50EB3D43626 /* BaseOperation.swift */,
+				F2E8687EED1E419667FDC6FEA8CD3FA4 /* ConsoleLogger.swift */,
+				BE164ACC5BF24C9B64FB1C94BBD18FE9 /* Credential.swift */,
+				19705D790E8BA09A76CCE3793962E63E /* CredentialManager.swift */,
+				EA179B211DFF5C1ED3C7CD271953A36D /* Date+iso8601.swift */,
+				DBCE91CC220CDE7887715BF2C159F440 /* DeviceToken.swift */,
+				A2DEE6CFA39A867280277F53A76F2F38 /* DeviceType.swift */,
+				8F69A76E0787CD6D38281987B3897034 /* Dictionary+merged.swift */,
+				5BA81AC54D36E742567C1A784B671AE1 /* Event.swift */,
+				5282E4AE5E2161E3A109FAFA81A94531 /* EventCollection.swift */,
+				6A69D87D4B0A8CCB4ECB6235C1503F53 /* EventOperation.swift */,
+				60ECEC95957561919D707B70E0763166 /* EventTracker.swift */,
+				0E7E1E216D49CC7F4DDA863F3C5BCEAC /* HTTPBehavior.swift */,
+				3CA6E06BD66411EB8E62622B081BE4AC /* HTTPMethod.swift */,
+				9726C8E5E815142F7BBD950263CECF62 /* HTTPResource.swift */,
+				CC70FAF34E60F6F0332CFE0573C4D402 /* HTTPResourceClient.swift */,
+				E56BADAE5756F1843D3DFBCA961AB1FA /* HTTPURLResponse+cURL.swift */,
+				912C324D4D715C9E082A407D02229AFF /* InputStream+readToString.swift */,
+				CD7B8CD2E6EF28159444D97A271F81B2 /* JSONParser.swift */,
+				96FD344FA70B222C4D2635D90BDDABA6 /* KeychainStorage.swift */,
+				40EB80179C9C86C492D15A556E7AA52E /* LocalObject.swift */,
+				AA2A29FDBE98B79908A9A10F3BB3D973 /* LocalStorageKeys.swift */,
+				B697DB8D79FBC2A686884CD12E9252DB /* LocalStorageType.swift */,
+				BB3B026FB41C875FF350E2CDA4BB755F /* LocalValue.swift */,
+				D20F92BF2FAAECCDC6ECC2DAFFE15038 /* PersistentEventStorage.swift */,
+				63EDA4D9B29294FF628DF0014260C6CC /* RegisterDeviceOperation.swift */,
+				2344D7B87570187D534A24CE05674548 /* RegisterPushOperation.swift */,
+				FDE125610CB7E64A7F0DF1555CE28370 /* ResourceResult.swift */,
+				4507F885B8D7E870CB83449E01BD8B86 /* TrackedEventType.swift */,
+				FBF610982117F348CF9B56E62A6DF959 /* UnregisterDeviceOperation.swift */,
+				0F0589C7C41A053F9C7AEAAC2EC32C6E /* UnregisterPushOperation.swift */,
+				9D085BE0F07A8AF0DCA5A5BAA373C5BE /* UpdateDeviceOperation.swift */,
+				406BEA492F1D495EDDBD5C269645F2FC /* URLRequest+cURL.swift */,
+				34298C47C706C8562F7EE5AE7160F3D1 /* UserDefaultsStorage.swift */,
+				9C866D39395B906EF9F553DE7DC48620 /* Vibes.swift */,
+				0A24ED24385D5AE06109FE148BBEC3D5 /* VibesAPI.swift */,
+				09843DBCEBA187B54258D381107623C9 /* VibesAPIDelegate.swift */,
+				BE657CF2755347CEA10E80EBE656DFF4 /* VibesConfiguration.swift */,
+				37285A301BC688B5D09D1E1355F7BDE5 /* VibesLogger.swift */,
+				EA35075DF09DDA45CF787DDB0A320026 /* VibesQueueOperation.swift */,
+				A27B6543A19598FDE7C7BBC0EFE68DA7 /* VibesResult.swift */,
+				83111DE0317D22412090DA0F35E79FA5 /* VibesURLProtocol.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAD2DEB3FD75D227107049ADDDB0F913 /* Pods-sampleReactNativeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C87845C699B6EF199574F0668969D9BF /* Pods-sampleReactNativeTests-acknowledgements.markdown */,
+				559FC1CA6634F072274EAAE2F3A1279C /* Pods-sampleReactNativeTests-acknowledgements.plist */,
+				DDD0BD07BE987522D2FE145D0F2604D8 /* Pods-sampleReactNativeTests-dummy.m */,
+				F17D0CAAD843DC9D579C6B141BECCF32 /* Pods-sampleReactNativeTests.debug.xcconfig */,
+				58F69152BDDEC90011DB2FBAE610789D /* Pods-sampleReactNativeTests.release.xcconfig */,
+			);
+			name = "Pods-sampleReactNativeTests";
+			path = "Target Support Files/Pods-sampleReactNativeTests";
+			sourceTree = "<group>";
+		};
+		FE8B3C9F58778A258144F46EC981ECA2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				843179F3C92CE6B44A49A5CA1A482433 /* VibesPush.modulemap */,
+				1C589242DED5043AA13A22C4024D94A7 /* VibesPush.xcconfig */,
+				BAB1DC740B3AC06D15041C9821EB655C /* VibesPush-dummy.m */,
+				D9BFA9E56B7434B06B889A4780ADBAD2 /* VibesPush-prefix.pch */,
+				450675514757D67ED4827A0FDEF81CC6 /* VibesPush-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VibesPush";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AFED5D4590723FD7509EF8C1879F45E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6756D288A1757CFF5B5EDD3D64793A54 /* VibesPush-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1436855B0BF8603FE56895B0102595B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39AE73172E45EE0DA6FD509A0BCCEFA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC13B54D4A6123DC96AF86FF317A4B5 /* Pods-sampleReactNative-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896A8941E67F1F2B5B3FBA3A8F6468E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0053BE6A8CCFFADEDD6E8ACFBC115C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3017C6EC0363646E2DB06F8EF5F736CF /* Pods-sampleReactNative-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE721F99519A608ED4EF210575E6069A /* Build configuration list for PBXNativeTarget "Pods-sampleReactNative-tvOSTests" */;
+			buildPhases = (
+				1436855B0BF8603FE56895B0102595B3 /* Headers */,
+				8673BB2756E408158A292518C337BC98 /* Sources */,
+				DC3C8D63B9FFCF7D4B91F6EE35390577 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6FAB222BA86E6CC052B072FFF799A95 /* PBXTargetDependency */,
+			);
+			name = "Pods-sampleReactNative-tvOSTests";
+			productName = "Pods-sampleReactNative-tvOSTests";
+			productReference = 8AFD23273A5A9F2B6A01257E7DCCF26F /* libPods-sampleReactNative-tvOSTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		62BE7C4504127242E9182C6BFAC29DEA /* Pods-sampleReactNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4A0030F4739246EE065816B2E38DE0F /* Build configuration list for PBXNativeTarget "Pods-sampleReactNative" */;
+			buildPhases = (
+				39AE73172E45EE0DA6FD509A0BCCEFA0 /* Headers */,
+				01286DE9FFF2441D2DCC98B3F1BF905E /* Sources */,
+				800E16B2B3E1CA558B078455A51E88E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BC47C9EC8BFA5C4CE804F42B34967E3 /* PBXTargetDependency */,
+			);
+			name = "Pods-sampleReactNative";
+			productName = "Pods-sampleReactNative";
+			productReference = 72851710BC5044CF83D65C6DA3D3A9C3 /* libPods-sampleReactNative.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		693B0441C9174E0470FBD2AA9A3A71B7 /* Pods-sampleReactNativeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 820215C4BADAC40E40453F7E094EAB0D /* Build configuration list for PBXNativeTarget "Pods-sampleReactNativeTests" */;
+			buildPhases = (
+				AE0053BE6A8CCFFADEDD6E8ACFBC115C /* Headers */,
+				A7353A9D0B929406C69F38B40A5DA8C6 /* Sources */,
+				D08011E9BCB77B61FA094B88CF8332AE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BE5FE0516264CE5BA78F03DD1A9E6AC /* PBXTargetDependency */,
+			);
+			name = "Pods-sampleReactNativeTests";
+			productName = "Pods-sampleReactNativeTests";
+			productReference = D2F8D4AF17AB8A2B27D692ABED1FFAD1 /* libPods-sampleReactNativeTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8C4A4241515DD3FB8C5A7E03898304FD /* VibesPush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D247F3EDE8E96BF3F56C97559F6C8C /* Build configuration list for PBXNativeTarget "VibesPush" */;
+			buildPhases = (
+				0AFED5D4590723FD7509EF8C1879F45E /* Headers */,
+				768C09B13FAD6B98DA365393140122FB /* Sources */,
+				8EB80BF4440F36D714507B8741F15669 /* Frameworks */,
+				AF0DFEFC05516956EC8C036533E4AACE /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VibesPush;
+			productName = VibesPush;
+			productReference = FFCD9E0FD67F402521EACE93C1457A48 /* libVibesPush.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C5582BDF9874B0AA2A52E9E3FC06B448 /* Pods-sampleReactNative-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD7B6DD209D4BA4893EBFDA5CEF5D25 /* Build configuration list for PBXNativeTarget "Pods-sampleReactNative-tvOS" */;
+			buildPhases = (
+				896A8941E67F1F2B5B3FBA3A8F6468E9 /* Headers */,
+				E4F62C9DA5B6896A1EAE3FC8CAA2A9D4 /* Sources */,
+				A429BAE09963AB9C5448896C6CA4F862 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-sampleReactNative-tvOS";
+			productName = "Pods-sampleReactNative-tvOS";
+			productReference = CDEA3227255E5BCBF90312F86A9B718C /* libPods-sampleReactNative-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B08230C9EEB4D1F873C19C066F043F86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62BE7C4504127242E9182C6BFAC29DEA /* Pods-sampleReactNative */,
+				C5582BDF9874B0AA2A52E9E3FC06B448 /* Pods-sampleReactNative-tvOS */,
+				3017C6EC0363646E2DB06F8EF5F736CF /* Pods-sampleReactNative-tvOSTests */,
+				693B0441C9174E0470FBD2AA9A3A71B7 /* Pods-sampleReactNativeTests */,
+				8C4A4241515DD3FB8C5A7E03898304FD /* VibesPush */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF0DFEFC05516956EC8C036533E4AACE /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/VibesPush/VibesPush.modulemap",
+				"${PODS_ROOT}/Headers/Public/VibesPush/VibesPush-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/VibesPush-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VibesPush/VibesPush.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VibesPush/VibesPush-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01286DE9FFF2441D2DCC98B3F1BF905E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBEB920C0FBEC99599816AE0FCF35610 /* Pods-sampleReactNative-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768C09B13FAD6B98DA365393140122FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C28A7DA47955AF3C7E012C2BEDF5556 /* APIDefinition.swift in Sources */,
+				DAA63034A0CB1BD7A534F431823AE8D6 /* AppObserver.swift in Sources */,
+				ADF207B2C741C68F66D58E9628E9A305 /* AssociatePersonOperation.swift in Sources */,
+				5480F46117CF22253D2CBCD714967615 /* AuthTokenBehavior.swift in Sources */,
+				4502473C823401664A956ABF60668119 /* BaseOperation.swift in Sources */,
+				73895BD484B372FB16D7B9525AB7AC18 /* ConsoleLogger.swift in Sources */,
+				4F2886965B6974813F13CD61D9297931 /* Credential.swift in Sources */,
+				6919B059641EB62D89AC148AADA9D033 /* CredentialManager.swift in Sources */,
+				790F9038D95FF7B163230DC6EEA756C5 /* Date+iso8601.swift in Sources */,
+				8B866EF98203D87D1A1C6551B79033C5 /* DeviceToken.swift in Sources */,
+				2DDE73B76DE734EED4B88E860A418FB1 /* DeviceType.swift in Sources */,
+				722CEC82B3D084278C169641FB426F53 /* Dictionary+merged.swift in Sources */,
+				3D10AC8FF9013E6B995CFC3E6ED3F03C /* Event.swift in Sources */,
+				BDF689A2D62F56115119135F9BF0D5F4 /* EventCollection.swift in Sources */,
+				C8D94F7500AA9A28756A82CFC79AD1D9 /* EventOperation.swift in Sources */,
+				D2478EDD1BD01B24F3F4B52BD905C53C /* EventTracker.swift in Sources */,
+				DE5235BB092B30BBF09AE74C95476648 /* HTTPBehavior.swift in Sources */,
+				2C129F2AB1552AD39A3797E1B19B8B95 /* HTTPMethod.swift in Sources */,
+				39DB1816DC80E6310F617BA4ECC172C9 /* HTTPResource.swift in Sources */,
+				09B8018A9FBB191D6A34B9795388683C /* HTTPResourceClient.swift in Sources */,
+				51304B98D1A2A743D61EF0FD8E686A1E /* HTTPURLResponse+cURL.swift in Sources */,
+				81FB3CC63E28E980944F42F566C0729F /* InputStream+readToString.swift in Sources */,
+				7AF88C2A6B95D9AEEA919A0D40B58801 /* JSONParser.swift in Sources */,
+				738A241CDA035BFA73D9C6EBCB11BC56 /* KeychainStorage.swift in Sources */,
+				BC3CCCE2D3E729C674630E16E5662C31 /* LocalObject.swift in Sources */,
+				6E81FCE6BC8E8E53EF2D07C643BFB85B /* LocalStorageKeys.swift in Sources */,
+				7A1C2BA725929DBDD7F4D3A9D90ACC92 /* LocalStorageType.swift in Sources */,
+				6AB699C3A49AD03C3FAF81CC8F4334D8 /* LocalValue.swift in Sources */,
+				427D651B1D0F61DEF5789944D9CEA436 /* PersistentEventStorage.swift in Sources */,
+				021B8720535DE1904D7426E287CD10DE /* RegisterDeviceOperation.swift in Sources */,
+				A2455147EDF158133DFF8FFADE6DD598 /* RegisterPushOperation.swift in Sources */,
+				291C9E4094D90A7740D34DF2B874D11C /* ResourceResult.swift in Sources */,
+				063028F41D98B3C3B414E890E04E187D /* TrackedEventType.swift in Sources */,
+				A9EC0A363109B0BE284702D37078CC56 /* UnregisterDeviceOperation.swift in Sources */,
+				C5B8D8DE30147DBE7A0AEA050B622843 /* UnregisterPushOperation.swift in Sources */,
+				E5A72346A2A4EB208C36E0C6AE203E29 /* UpdateDeviceOperation.swift in Sources */,
+				632C5F8B8A8905AFE48847AAEDD74907 /* URLRequest+cURL.swift in Sources */,
+				7223EE948AEE79AC464F162D59784C08 /* UserDefaultsStorage.swift in Sources */,
+				2EE45904F853902A9D6C835A660A16A5 /* Vibes.swift in Sources */,
+				3162D68E2D2B9721EE613331FA65B7E2 /* VibesAPI.swift in Sources */,
+				6A83D90AA63AEABD5B489E45EDE2E3C8 /* VibesAPIDelegate.swift in Sources */,
+				33EC15D2B7A9461B7DD165B34E45AD66 /* VibesConfiguration.swift in Sources */,
+				171A26BF80A83A82BE3FFB6D8CB3936B /* VibesLogger.swift in Sources */,
+				AE36A8A7CFE3FFDF6F22D14DF3F9BEB5 /* VibesPush-dummy.m in Sources */,
+				E6AFBAC4E6D31FC33D20BEE3EDE366BA /* VibesQueueOperation.swift in Sources */,
+				E73E940592ED01E42DA99FA636C1A289 /* VibesResult.swift in Sources */,
+				500A17551760B1C43DA2E7EB82BF1E7C /* VibesURLProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8673BB2756E408158A292518C337BC98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C296CFA5A26DC75F2CF4AB3642DD315 /* Pods-sampleReactNative-tvOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7353A9D0B929406C69F38B40A5DA8C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF2E02B0DD803C40BCCE1DEE7E5CE75 /* Pods-sampleReactNativeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F62C9DA5B6896A1EAE3FC8CAA2A9D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12153DDDFC0D60EC23072AB64FE4BB2 /* Pods-sampleReactNative-tvOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BC47C9EC8BFA5C4CE804F42B34967E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VibesPush;
+			target = 8C4A4241515DD3FB8C5A7E03898304FD /* VibesPush */;
+			targetProxy = 34658D4F3217DA1DF5EF86F67879088A /* PBXContainerItemProxy */;
+		};
+		7BE5FE0516264CE5BA78F03DD1A9E6AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-sampleReactNative";
+			target = 62BE7C4504127242E9182C6BFAC29DEA /* Pods-sampleReactNative */;
+			targetProxy = D84E6A860DF00B3C16C5A9A2540F0345 /* PBXContainerItemProxy */;
+		};
+		C6FAB222BA86E6CC052B072FFF799A95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-sampleReactNative-tvOS";
+			target = C5582BDF9874B0AA2A52E9E3FC06B448 /* Pods-sampleReactNative-tvOS */;
+			targetProxy = 51B4CA20F80780F9C6DFFE6DDD752ABD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E745D83DD02C94642D37A1CC44D5E98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C589242DED5043AA13A22C4024D94A7 /* VibesPush.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VibesPush/VibesPush-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/VibesPush/VibesPush.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VibesPush;
+				PRODUCT_NAME = VibesPush;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25C94866268A92025EA000AAA5D000B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F60D51F7D1E235A271C36CD7EADD7B90 /* Pods-sampleReactNative.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-sampleReactNative/Pods-sampleReactNative.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F7CC71C49A0B57CD8943C1A18F44D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17D0CAAD843DC9D579C6B141BECCF32 /* Pods-sampleReactNativeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4582F20F823897CA3868F635C67B60B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241C40F9C9278F679227F7CEA2E49BF7 /* Pods-sampleReactNative-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		5E6D795709B3D69A52563407F4BECBDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEB8B691C2899635597A2170BCCDE249 /* Pods-sampleReactNative-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		68F07807C8D62F2D76C744A41F3D874D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		AE0E45DB4996E6D3DE7A7DB7875BBF0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C589242DED5043AA13A22C4024D94A7 /* VibesPush.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VibesPush/VibesPush-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/VibesPush/VibesPush.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VibesPush;
+				PRODUCT_NAME = VibesPush;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D6C49F820EB2171F114A130537EA34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A4EE2081AEB8EA7A5ED228B10122007 /* Pods-sampleReactNative-tvOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBAE04EB54057E97C2AF9A4BEC397331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F69152BDDEC90011DB2FBAE610789D /* Pods-sampleReactNativeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC7EC6BD4C7CA45BD70CC720A192F958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F51AE3D6C627E324F3AA2C8FE8C0B88 /* Pods-sampleReactNative.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-sampleReactNative/Pods-sampleReactNative.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1ED6DABFEFD9C54EE38EDA3D2F7092C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		EE1FF575652B222381A5B5F82DA9370D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E33C9BCA2EBCF3FEDA9A0E3A419810 /* Pods-sampleReactNative-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1ED6DABFEFD9C54EE38EDA3D2F7092C /* Debug */,
+				68F07807C8D62F2D76C744A41F3D874D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74D247F3EDE8E96BF3F56C97559F6C8C /* Build configuration list for PBXNativeTarget "VibesPush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E745D83DD02C94642D37A1CC44D5E98 /* Debug */,
+				AE0E45DB4996E6D3DE7A7DB7875BBF0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		820215C4BADAC40E40453F7E094EAB0D /* Build configuration list for PBXNativeTarget "Pods-sampleReactNativeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7CC71C49A0B57CD8943C1A18F44D98 /* Debug */,
+				CBAE04EB54057E97C2AF9A4BEC397331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD7B6DD209D4BA4893EBFDA5CEF5D25 /* Build configuration list for PBXNativeTarget "Pods-sampleReactNative-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4582F20F823897CA3868F635C67B60B5 /* Debug */,
+				B6D6C49F820EB2171F114A130537EA34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4A0030F4739246EE065816B2E38DE0F /* Build configuration list for PBXNativeTarget "Pods-sampleReactNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C94866268A92025EA000AAA5D000B0 /* Debug */,
+				DC7EC6BD4C7CA45BD70CC720A192F958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE721F99519A608ED4EF210575E6069A /* Build configuration list for PBXNativeTarget "Pods-sampleReactNative-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E6D795709B3D69A52563407F4BECBDB /* Debug */,
+				EE1FF575652B222381A5B5F82DA9370D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

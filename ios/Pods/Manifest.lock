@@ -1,0 +1,18 @@
+PODS:
+  - VibesPush (3.3.0):
+    - VibesPush/Core (= 3.3.0)
+  - VibesPush/Core (3.3.0)
+
+DEPENDENCIES:
+  - VibesPush
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - VibesPush
+
+SPEC CHECKSUMS:
+  VibesPush: 5ddf90e0044ce7f765e69e11a268c7e3582fe684
+
+PODFILE CHECKSUM: 58db32558478bdff836a61fe5e197cc105d2f9a5
+
+COCOAPODS: 1.6.0

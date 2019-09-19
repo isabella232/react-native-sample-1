@@ -1,0 +1,6 @@
+module VibesPush {
+  umbrella header "VibesPush-umbrella.h"
+
+  export *
+  module * { export * }
+}
